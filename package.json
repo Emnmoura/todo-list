@@ -1,17 +1,27 @@
 {
   "name": "todo-list",
   "version": "1.0.0",
-  "description": "",
+  "description": "| Api Route | | --------- | | Method    | Enpoint | Payload | Response | Action | | GET       | /todos | \\- | \\[todos\\] | Get All Todos form DB | | POST      | /todos | {\"title\":String,\"completed\":Bollean} | {todo} | Create new Todo | | PUT       | /todos/:id | {\"title\":String,\"completed\":Bollean} | {todo} | Update Existing Todo by ID | | DELETE    | /todos/:id | \\- | \\- | Deletes todo |",
   "main": "index.js",
   "scripts": {
-    "test":"nodemon app.js",
-    "start":"node app.js"
+    "test": "nodemon app.js",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
     "mongoose": "^6.0.5"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Emnmoura/todo-list.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Emnmoura/todo-list/issues"
+  },
+  "homepage": "https://github.com/Emnmoura/todo-list#readme"
 }
